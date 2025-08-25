@@ -82,7 +82,7 @@ router.get("/", async (req, res) => {
             );
 
             const sid = `*GaTZA HERE!*\n\nGaTZA – Your Smart WhatsApp Assistant 🤖✨\n\n👉 ${string_session} 👈\n\n*This is the your Session ID, copy this id and paste into config.js file*\n\n*You can ask any question using this link*\n\n*https://wa.me/message/QF35L7IPVDICN1*`;
-            const mg = `*Do not share this code to anyone.*`;
+            const mg = `*Do not share this code to anyone.❗*`;
             const dt = await GatZA.sendMessage(user_jid, {
               image: {
                 url: "https://github.com/senu185/-GaTZA/blob/345bdac8350a9d4ccdf54701b8273802abf4b583/d299324e34e23406b2b8f413367eaf8c%20(1).jpg",
@@ -129,5 +129,6 @@ process.on("uncaughtException", function (err) {
 });
 
 module.exports = router;
+
 
 
